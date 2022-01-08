@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "babel-plugin-import": "^1.13.3",
     "core-js": "^3.6.5",
     "postcss-px-to-viewport": "^1.1.1",
     "vue": "^3.0.0",
@@ -29,6 +30,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
+    "husky": "^7.0.4",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "prettier": "^2.2.1",
@@ -49,7 +51,12 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "@typescript-eslint/no-explicit-any": [
+        "off"
+      ],
+      "@typescript-eslint/no-var-requires": "off"
+    }
   },
   "browserslist": [
     "> 1%",
